@@ -1,0 +1,11 @@
+regression\SoftyAssert.class
+regression\assertionsCheck.class
+regression\Dependencies.class
+testCases\assertionsCheck.class
+testCases\SoftyAssert.class
+testCases\BaseTest.class
+testCases\TestCases.class
+testCases\TestFailure.class
+testCases\TestSkip.class
+customListeners\ListenersForTest.class
+testCases\Dependencies.class

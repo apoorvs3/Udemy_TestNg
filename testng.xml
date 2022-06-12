@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!--  
+<groups>
+<run >
+<include name="sanity"></include>
+</run>
+</groups>
+-->
+
+<listeners>
+	<listener class-name="customListeners.ListenersForTest"></listener>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+
+  <test thread-count="5" name="basic Test">
+    <classes>
+      <class name="testCases.TestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Dependencies test">
+    <classes>
+      <class name="testCases.Dependencies"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Failure Test">
+    <classes>
+      <class name="testCases.assertionsCheck"/>
+      <class name="testCases.SoftyAssert"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

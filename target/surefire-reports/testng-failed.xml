@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="customListeners.ListenersForTest"/>
+  </listeners>
+  <test thread-count="5" name="Failure Test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.SoftyAssert">
+        <methods>
+          <include name="TearDown"/>
+          <include name="validateTitles"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.SoftyAssert -->
+      <class name="testCases.assertionsCheck">
+        <methods>
+          <include name="TearDown"/>
+          <include name="validateTitles"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.assertionsCheck -->
+    </classes>
+  </test> <!-- Failure Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
